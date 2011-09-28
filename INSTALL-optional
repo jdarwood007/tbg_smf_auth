@@ -1,0 +1,23 @@
+Below is a diff of the core templates header file.  This changes the login to just be a simple link requiring no entering of the users login details.  This works off the SMF cookie and assuming the user is logged into SMF, authentication is automatic.
+
+
+--- /core/templates/header.inc.php	2011-08-20 13:42:40.000000000 -0700
++++ /core/templates/header.inc.php	2011-09-16 12:35:09.000000000 -0700
+@@ -415,7 +415,7 @@
+ 												</td>
+ 												<td id="header_username" valign="middle">
+ 													<?php if ($tbg_user->isGuest()): ?>
+-														<a href="javascript:void(0);" onclick="showFadedBackdrop('<?php echo make_url('get_partial_for_backdrop', array('key' => 'login')); ?>')"><?php echo __('You are not logged in'); ?></a>
++														<a href="<?php echo make_url('smf_login'); ?>"><?php echo __('You are not logged in'); ?></a>
+ 													<?php else: ?>
+ 														<?php $name = (TBGContext::getUser()->getRealname() == '') ? TBGContext::getUser()->getBuddyname() : TBGContext::getUser()->getRealname(); ?>
+ 														<?php echo link_tag(make_url('dashboard'), tbg_decodeUTF8($name)); ?>
+@@ -430,7 +430,7 @@
+ 										</table>
+ 										<div class="rounded_box blue tab_menu_dropdown user_menu_dropdown shadowed">
+ 											<?php if ($tbg_user->isGuest()): ?>
+-												<a href="javascript:void(0);" onclick="showFadedBackdrop('<?php echo make_url('get_partial_for_backdrop', array('key' => 'login')); ?>')"><?php echo image_tag('icon_login.png').__('Login'); ?></a>
++												<a href="<?php echo make_url('smf_login'); ?>"><?php echo image_tag('icon_login.png').__('Login'); ?></a>
+ 												<?php if (TBGSettings::isRegistrationAllowed()): ?>
+ 													<a href="javascript:void(0);" onclick="showFadedBackdrop('<?php echo make_url('get_partial_for_backdrop', array('key' => 'login', 'section' => 'register')); ?>');"><?php echo image_tag('icon_register.png').__('Register'); ?></a>
+ 												<?php endif; ?>

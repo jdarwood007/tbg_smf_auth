@@ -1,0 +1,45 @@
+Installation
+
+Requires:
+Working SMF 2.0+ installation
+Working TBG 3.1 installation
+PHP 5.3+ (Per TBGs requirements)
+
+Definitions:
+TBG = The Bug Genie
+SMF = Simple Machines Forum
+
+1. Download the TBG SMF Auth.
+
+2. Connect to your remote server and navigate to your TBG modules location.
+
+3. Create a smf_auth folder.
+
+4. Upload contents of TBG SMF Auth to this folder.
+
+5. Navigate on your browser to your TBG location
+
+6. Click your user -> Configure TBG -> Modules
+
+7. Scroll down to uninstalled modules.  Choose the SMF Auth module and click install
+
+8. In the modules list, click the configure settings icon (gears image).
+
+9.
+	a. Define the path to your SSI location.
+	b. The script will auto detect no key generated and auto generate one, you are welcome to change the private key.  The private key helps protect the passwords the SMF Auth generates.
+	c. Define login groups.  Changing this will only allow those selected login groups to log into TBG.
+	d. Define administrative groups.  Choosing these SMF groups will make members of these groups have TBG Administrator access.
+	e. Define enabled access groups.  Choose which groups you want to configure access controls to.  Such as a group on SMF that should be developer access on TBG.
+
+10. Save these settings and return to configure the enabled access groups.
+
+11. The group on the left is the SMF group, while the ones on the right are TBG teams.  Simply select which groups these SMF groups should grant access to.
+The SMF Auth will check the users SMFs groups based on which ones are enabled, if they are in this SMF group, it will add them to these TBG teams.
+
+12. Save and navigate to Authentication
+
+13. Change Authentication backend to SMF Authentication and save your settings.
+
+14. At this point you may be logged out, Simply log back in and hopefully everything worked at it should.
+
