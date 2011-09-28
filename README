@@ -1,0 +1,19 @@
+SMF Authenication for The Bug Genie
+
+Allows The Bug Genie to autenicate with a running SMF installation.
+
+Author:
+Jeremy Darwood
+
+Copyright:
+2011 Jeremy Darwood. All rights reserved.
+
+Disclaimer:
+This package is provided "as is" and without any warranty. Any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the authors be liable to any party for any direct, indirect, incidental, special, exemplary, or consequential damages arising in any way out of the use or misuse of this package.
+
+License:
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+[] Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimers.
+[] Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimers in the documentation and/or other materials provided with the distribution.
+[] Names of Author(s) may not be used to endorse or promote products derived from this Software without specific prior written permission.
+
