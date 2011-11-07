@@ -190,14 +190,12 @@
 				// Nobody admins the admins.
 				if (!empty($admingroups) && array_intersect($admingroups, $user_info['groups']))
 				{
-					$group = new TBGGroup();
-					$group->setID(1);
+					$group = new TBGGroup(1);
 					$user->setGroup($group);
 				}
 				else
 				{
-					$group = new TBGGroup();
-					$group->setID(2);
+					$group = new TBGGroup(2);
 					$user->setGroup($group);
 				}
 
