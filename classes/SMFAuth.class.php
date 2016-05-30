@@ -17,6 +17,8 @@
 	 *
 	 * @package auth_smf
 	 * @subpackage core
+	 *
+	 * @Table(name="TBGModulesTable")
 	 */
 	class SMFAuth extends TBGModule
 	{
